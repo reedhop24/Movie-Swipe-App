@@ -8,6 +8,8 @@
 
 ##### From the swipe portion you can view the queue of movies that you have chosen to like by pressing the list view between the dislike and like buttons.
 
+![40256](https://user-images.githubusercontent.com/40578449/97605044-69dbcc80-19cb-11eb-908f-c2c11c899624.jpg)
+
 ##### Or you can view details about each of the movies by pressing the green triangle on each movie. 
 
 ##### On the back end my code is pretty simple (it is all in the services folder). I am just making an API call to RapidAPI where it gives me the IMDB_ID for each movie. Then I take that id and make another GET for details about that movie from the movie DB API and return an Array of Objects with each Object being a movie.
