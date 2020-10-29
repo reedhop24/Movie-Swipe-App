@@ -4,6 +4,8 @@
 
 ##### The app is broken down into 3 pages. The first of which is the Swipe page where users are displayed different movie titles and their ratings and can either like or dislike by pressing the button or swiping right or left respectively.
 
+![44700](https://user-images.githubusercontent.com/40578449/97604864-2ed99900-19cb-11eb-8e0c-91104bc409ee.jpg)
+
 ##### From the swipe portion you can view the queue of movies that you have chosen to like by pressing the list view between the dislike and like buttons.
 
 ##### Or you can view details about each of the movies by pressing the green triangle on each movie. 
