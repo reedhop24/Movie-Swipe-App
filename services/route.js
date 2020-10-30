@@ -17,7 +17,7 @@ app.get('/movieInfo', async (req, res) => {
     for(let i = 0; i < innerReq.data.Results.length; i++) {
         // Async in a loop issue fixed by iife and res.json() call in another function
         (async () => {
-            const imdbInfo = await axios.get(`https://api.themoviedb.org/3/find/${innerReq.data.Results[i].imdbID}?api_key=1ca9c915f7339315562c2912380dd1a0&language=en-US&external_source=imdb_id`);
+            const imdbInfo = await axios.get(`https://api.themoviedb.org/3/find/${innerReq.data.Results[i].imdbID}?api_key=${process.env.API_KEY}&language=en-US&external_source=imdb_id`);
             allMovies.push(imdbInfo.data.movie_results);
             count++;
             if(count > innerReq.data.Results.length - 1) finished();
